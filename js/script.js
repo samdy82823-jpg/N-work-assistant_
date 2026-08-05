@@ -1,0 +1,1 @@
+console.log("ERJING TOOLS 啟動成功！");

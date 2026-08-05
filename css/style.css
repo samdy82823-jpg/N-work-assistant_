@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Noto Sans TC',sans-serif;
+
+    background:#f4f7fb;
+
+}
+
+.container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:40px 20px;
+
+}
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.header h1{
+
+    color:#009966;
+
+    font-size:42px;
+
+}    
+.header h2{
+
+    margin-top:8px;
+
+    font-size:24px;
+
+    color:#555;
+
+    font-weight:500;
+
+    letter-spacing:1px;
+
+}
+
+.header p{
+
+
+    margin-top:10px;
+
+    color:#777;
+
+    font-size:18px;
+
+}
+
+.menu{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card{
+
+    font-size:48px;
+
+}
+
+.card h2{
+
+    font-size:22px;
+
+    margin:15px 0;
+
+}
+
+.card p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+/* ========================= */
+/* Header Card */
+/* ========================= */
+
+.header-card{
+
+    width:420px;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.header-card .logo{
+
+    font-size:42px;
+
+}
+
+.header-card h1{
+
+    color:#009966;
+
+    margin:10px 0 5px;
+
+    font-size:40px;
+
+}
+
+.header-card p{
+
+    color:#666;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+}
+
+
+/* ========================= */
+/* Menu */
+/* ========================= */
+
+.menu{
+
+    width:1000px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:#222;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.icon{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+.card h2{
+
+    margin-bottom:12px;
+
+    font-size:28px;
+
+}
+
+.card span{
+
+    color:#777;
+
+    font-size:16px;
+
+}
+@media(max-width:900px){
+
+.menu{
+
+    width:95%;
+
+    grid-template-columns:1fr;
+
+}
+
+.header-card{
+
+    width:85%;
+
+}
+
+}

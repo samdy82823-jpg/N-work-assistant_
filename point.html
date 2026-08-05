@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>點數換算工具</title>
+
+    <link rel="stylesheet" href="css/point.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💰 點數換算工具</h1>
+
+    <label>請輸入消費金額（元）</label>
+
+    <input
+        type="number"
+        id="money"
+        placeholder="例如：15687">
+
+    <div class="button-group">
+
+        <button id="calculate">
+            開始計算
+        </button>
+
+        <button id="clear">
+            清除
+        </button>
+
+    </div>
+
+</div>
+<div id="result" class="result-card">
+
+<h2>🎉 計算結果</h2>
+
+<div class="result-box">
+
+    <div class="result-row">
+        <span>總點數：</span>
+        <strong>
+            <span id="totalPoint">0</span> 點
+        </strong>
+    </div>
+
+    <div class="tip">
+        💡 1 點可以折抵 1 元
+    </div>
+
+    <hr>
+
+    <div class="result-row">
+        <span>一般點數 (2%)：</span>
+
+        <strong>
+            <span id="normalPoint">0</span> 點
+        </strong>
+
+        <span class="blue">
+            (下次消費即可折抵)
+        </span>
+
+    </div>
+
+    <div class="result-row">
+
+        <span>限期點數 (8%)：</span>
+
+        <strong>
+            <span id="eventPoint">0</span> 點
+        </strong>
+
+        <span class="red">
+            (使用期限2026/8/10~2026/8/30
+            <span id="eventDate"></span>)
+        </span>
+
+    </div>
+
+    <hr>
+
+    <div class="success-text">
+
+        🎉 恭喜您！
+
+        本次消費獲得
+
+        <span id="messageTotal">0</span>
+
+        點會員點數！
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+</body>
+
+</html>
+<script src="js/setting.js"></script>
+<script src="js/point.js"></script>
