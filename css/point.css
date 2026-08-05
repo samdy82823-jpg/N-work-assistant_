@@ -91,326 +91,252 @@ h1{
 
     color:#009966;
 
-}.result-card{
-
+.result-card{
     max-width:900px;
-
-    margin:50px auto;
-
+    margin:40px auto;
     background:#F5F7FA;
-
-    border-radius:18px;
-
-    padding:35px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
-
-
 
 .result-card h2{
-
-    font-size:40px;
-
+    font-size:34px;
+    font-weight:700;
     margin-bottom:20px;
-
-    border-bottom:2px solid #ddd;
-
     padding-bottom:15px;
-
+    border-bottom:2px solid #ddd;
 }
 
-.row{
+/* ===========================
+   白色內容區
+=========================== */
 
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-    
-    gap:15px;
-
+.result-box{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
 }
 
-.row strong{
+/* ===========================
+   總點數
+=========================== */
 
-    color:#009966;
-
-}.total-card{
-
-    background:none;
-
-    text-align:left;
-
-    padding:0;
-
-    margin:48px 0;
-
+.total-card{
+    margin-bottom:20px;
 }
-
 
 .big-point{
-
-    font: size 60px;
-
-    color:#0AA06E;
-
-    font-weight:bold;
-
-    display:inline;
-
+    font-size:52px;
+    color:#009966;
+    font-weight:700;
 }
 
 .point-unit{
-
-    font-size:24px;
-
-    color:#333;
-
-    margin-left:8px;
-
-}    
-
-.point-group{
-
-    display:block;
-
-}
-
-
-..point-box{
-
-    background:none;
-
-    border:none;
-
-    padding:15px 0;
-
-    text-align:left;
-
-}
-.point-box:hover{
-
-    transform:translateY(-3px);
-
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
-
-}
-
-.small-point{
-
-    font: size 24px;
-
-    color:#009966;
-
-    font-weight:bold;
-
-    margin-top:10px;
-
-}.date-title{
-
-    margin: top 12px;
-
-    color:#666;
-
-    font-size:12px;
-
-}
-
-.date-text{
-
-    margin-top:8px;
-
-    font: size 12px;
-
-    color:#333;
-
-    font-weight:bold;
-
-    line-height:1.6;
-
-    word-break:keep-all;
-
-}.message-card{
-
-    margin-top:25px;
-
-    background:none;
-
-    border:none;
-
-    padding:0;
-
-    text-align:left;
-}
-
-
-
-.message-card h2{
-
-    color:#059669;
-
-    margin-bottom:15px;
-
-}
-
-..message-card h1{
-
-     color:#E53935;
-
-    font-size:24px;
-
-    margin:10px 0;
-
-}
-
-.red{
-
-    color:#E53935;
-
-    font-weight:bold;
-
-}
-
-.blue{
-
-    color:#1976D2;
-
-    font-weight:bold;
-
-}
-
-.green{
-
-    color:#009966;
-
-    font-weight:bold;
-
-}
-
-..message-info{
-
     font-size:22px;
-
-    margin-top:20px;
-
-    line-height:2;
-
+    color:#333;
+    margin-left:5px;
 }
 
+/* ===========================
+   提示
+=========================== */
 
-..message-tip{
-
-    margin-top:25px;
-
+.tip{
+    margin:18px 0;
+    padding-bottom:15px;
+    border-bottom:2px solid #ddd;
+    color:#666;
     font-size:18px;
-
-    color:#777;
-
-}.result-box{
-
-    background:#f8f9fb;
-
-    border-radius:20px;
-
-    padding:24px;
-
 }
+
+/* ===========================
+   一般點數 / 限期點數
+=========================== */
 
 .result-row{
-
     display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
     margin:20px 0;
-
-    font-size:24px;
-
+    font-size:22px;
+    line-height:1.5;
 }
 
 .result-row strong{
-
     color:#009966;
-
-    font-size:24px;
-
-}
-
-.tip{
-
-    margin-top:15px;
-
-    color:#666;
-
-    font-size:18px;
-
+    font-size:30px;
 }
 
 .blue{
-
     color:#1976D2;
-
-    font-weight:bold;
-
+    font-weight:700;
 }
 
 .red{
-
     color:#E53935;
-
-    font-weight:bold;
-
+    font-weight:700;
 }
 
+/* ===========================
+   恭喜文字
+=========================== */
+
 .success-text{
-
     margin-top:30px;
-
-    color:#E53935;
-
-    font-size:18px;
-
-    font-weight:bold;
-
+    padding-top:20px;
+    border-top:2px solid #ddd;
     text-align:center;
-
+    color:#E53935;
+    font-size:24px;
+    font-weight:bold;
+    line-height:1.8;
 }
 
 .success-text span{
-
     color:#009966;
-
-    font-size:36px;
-
+    font-size:46px;
 }
-@media (max-width: 768px){
 
-    .result-title{
+/* ===========================
+   手機版
+=========================== */
+
+@media (max-width:768px){
+
+    .result-card{
+        padding:20px;
+    }
+
+    .result-box{
+        padding:18px;
+    }
+
+    .result-card h2{
         font-size:26px;
     }
 
     .big-point{
-        font-size:42px;
+        font-size:40px;
     }
 
     .point-unit{
         font-size:18px;
     }
 
-    .date-text{
-        font-size:13px;
+    .tip{
+        font-size:14px;
     }
 
+    .result-row{
+        font-size:16px;
+        gap:10px;
+    }
+
+    .result-row strong{
+        font-size:20px;
+    }
+
+    .blue,
     .red{
-        font-size:12px;
+        font-size:14px;
     }
 
     .success-text{
-        font-size:20px;
+        font-size:18px;
     }
+
+    .success-text span{
+        font-size:34px;
+    }
+    .point-title{
+
+    font-size:17px;
+
+}
+
+.point-value{
+
+    font-size:28px;
+
+}
+
+.point-desc{
+
+    font-size:15px;
+
+}
+
+.point-date{
+
+    font-size:15px;
+
+}
+
+
+}/* ===========================
+   點數資訊
+=========================== */
+
+.point-item{
+
+    margin:25px 0;
+
+}
+
+.point-title{
+
+    font-size:20px;
+
+    color:#333;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.point-value{
+
+    font-size:36px;
+
+    font-weight:bold;
+
+    color:#009966;
+
+    margin-bottom:10px;
+
+}
+
+.point-desc{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    line-height:1.5;
+
+}
+
+.point-date{
+
+    margin-top:6px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    line-height:1.6;
+
+}
+
+hr{
+
+    border:none;
+
+    border-top:2px solid #e5e5e5;
+
+    margin:28px 0;
 
 }
