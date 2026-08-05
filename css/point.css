@@ -91,6 +91,11 @@ h1{
 
     color:#009966;
 
+/* ===========================
+   計算結果
+=========================== */
+
+
 .result-card{
     max-width:900px;
     margin:40px auto;
@@ -164,29 +169,9 @@ h1{
     line-height:1.5;
 }
 
-.point-value{
-
+.result-row strong{
     color:#009966;
-
-    font-size:36px;
-
-    font-weight:700;
-
-    line-height:1.2;
-
-    margin-bottom:8px;
-
-}
-
-.point-value strong{
-
-    color:inherit;
-
-    font-size:inherit;
-
-    font-weight:inherit;
-
-}
+    font-size:30px;
 }
 
 .blue{
@@ -218,7 +203,71 @@ h1{
     color:#009966;
     font-size:46px;
 }
+/* ===========================
+   點數資訊
+=========================== */
 
+.point-item{
+
+    margin:25px 0;
+
+}
+
+.point-title{
+
+    font-size:20px;
+
+    color:#333;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.point-value{
+
+    font-size:36px;
+
+    font-weight:bold;
+
+    color:#009966;
+
+    margin-bottom:10px;
+
+}
+
+.point-desc{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    line-height:1.5;
+
+}
+
+.point-date{
+
+    margin-top:6px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    line-height:1.6;
+
+}
+
+hr{
+
+    border:none;
+
+    border-top:2px solid #e5e5e5;
+
+    margin:28px 0;
+
+}
 /* ===========================
    手機版
 =========================== */
@@ -269,8 +318,7 @@ h1{
 
     .success-text span{
         font-size:34px;
-    }
-    .point-title{
+    }.point-title{
 
     font-size:17px;
 
@@ -293,78 +341,5 @@ h1{
     font-size:15px;
 
 }
-
-
-}/* ===========================
-   點數資訊
-=========================== */
-
-.point-item{
-
-    margin:25px 0;
-
-}
-
-.point-title{
-
-    font-size:20px;
-
-    color:#333;
-
-    font-weight:600;
-
-    margin-bottom:12px;
-
-}
-
-.point-value{
-
-    color:#009966;
-
-    font-size:36px;
-
-    font-weight:700;
-
-    line-height:1.2;
-
-}
-
-.point-value strong{
-
-    color:inherit;
-
-    font-weight:inherit;
-
-}
-
-.point-desc{
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    line-height:1.5;
-
-}
-
-.point-date{
-
-    margin-top:6px;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    line-height:1.6;
-
-}
-
-hr{
-
-    border:none;
-
-    border-top:2px solid #e5e5e5;
-
-    margin:28px 0;
 
 }
