@@ -152,7 +152,7 @@ h1{
 
 .big-point{
 
-    font-size:48px;
+    font-size:42px;
 
     color:#0AA06E;
 
@@ -214,7 +214,7 @@ h1{
 
     color:#666;
 
-    font-size:14px;
+    font-size:12px;
 
 }
 
@@ -372,7 +372,7 @@ h1{
 
     color:#E53935;
 
-    font-size:28px;
+    font-size:18px;
 
     font-weight:bold;
 
@@ -384,58 +384,33 @@ h1{
 
     color:#009966;
 
-    font-size:42px;
+    font-size:36px;
 
 }
-/* ===========================
-   手機版 (寬度768以下)
-=========================== */
-@media (max-width:768px){
+@media (max-width: 768px){
 
-.result-card{
-    padding:20px;
-    margin:20px 10px;
-}
+    .result-title{
+        font-size:26px;
+    }
 
-.result-card h2{
-    font-size:28px;
-}
+    .big-point{
+        font-size:42px;
+    }
 
-.row{
-    font-size:18px;
-}
+    .point-unit{
+        font-size:18px;
+    }
 
-.big-point{
-    font-size:40px;
-}
+    .date-text{
+        font-size:13px;
+    }
 
-.small-point{
-    font-size:24px;
-}
+    .red{
+        font-size:12px;
+    }
 
-.message-card{
-    padding:20px;
-}
-
-.message-card h2{
-    font-size:22px;
-}
-
-.message-card h1{
-    font-size:32px;
-}
-
-.message-info{
-    font-size:18px;
-}
-
-.message-tip{
-    font-size:16px;
-}
-
-.date-text{
-    font-size:14px;
-    line-height:1.5;
-}
+    .success-text{
+        font-size:20px;
+    }
 
 }
