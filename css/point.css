@@ -127,9 +127,9 @@ h1{
 
     justify-content:space-between;
 
-    margin:15px 0;
-
-    font-size:20px;
+    align-items:center;
+    
+    gap:15px;
 
 }
 
@@ -229,6 +229,8 @@ h1{
     font-weight:bold;
 
     line-height:1.6;
+
+    word-break:keep-all;
 
 }.message-card{
 
@@ -383,5 +385,57 @@ h1{
     color:#009966;
 
     font-size:42px;
+
+}
+/* ===========================
+   手機版 (寬度768以下)
+=========================== */
+@media (max-width:768px){
+
+.result-card{
+    padding:20px;
+    margin:20px 10px;
+}
+
+.result-card h2{
+    font-size:28px;
+}
+
+.row{
+    font-size:18px;
+}
+
+.big-point{
+    font-size:40px;
+}
+
+.small-point{
+    font-size:24px;
+}
+
+.message-card{
+    padding:20px;
+}
+
+.message-card h2{
+    font-size:22px;
+}
+
+.message-card h1{
+    font-size:32px;
+}
+
+.message-info{
+    font-size:18px;
+}
+
+.message-tip{
+    font-size:16px;
+}
+
+.date-text{
+    font-size:14px;
+    line-height:1.5;
+}
 
 }
