@@ -137,57 +137,67 @@ button{
 
 }
 
-/* ==========================================
-   Result
-   ========================================== */
+/* =======================
+   Result Card
+======================= */
 
 .result-card{
 
-    margin-top:40px;
+    max-width:420px;
 
-    background:#F5F7FA;
+    margin:30px auto;
 
-    border-radius:20px;
+    background:#F7F8FA;
 
-    padding:25px;
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
 }
 
 .result-card h2{
 
-    font-size:36px;
+    font-size:34px;
 
-    margin:0;
+    margin:0 0 20px;
+
+    border-bottom:2px solid #ddd;
 
     padding-bottom:15px;
 
-    border-bottom:2px solid var(--border);
-
 }
 
-/* ===== 總點數 ===== */
+/* =======================
+   Total
+======================= */
 
 .total-card{
 
-    margin:28px 0 18px;
+    text-align:left;
+
+    margin:20px 0;
 
 }
 
 .total-title{
 
-    font-size:22px;
+    font-size:18px;
 
-    color:#333;
+    color:#444;
 
     font-weight:bold;
 
 }
 
-.big-point{
+.total-number{
 
-    color:var(--green);
+    margin-top:10px;
 
-    font-size:56px;
+    font-size:48px;
+
+    color:#009966;
 
     font-weight:bold;
 
@@ -195,129 +205,105 @@ button{
 
 .point-unit{
 
-    font-size:28px;
+    font-size:24px;
 
     color:#333;
 
-    margin-left:6px;
-
 }
 
-/* ===== 提示 ===== */
+/* =======================
+   Tip
+======================= */
 
 .tip{
 
-    margin:15px 0;
-
-    color:#666;
+    margin:18px 0;
 
     font-size:18px;
 
+    color:#666;
+
 }
 
-/* ==========================================
-   點數區
-   ========================================== */
+/* =======================
+   Point Item
+======================= */
 
 .point-item{
 
-    margin:18px 0;
-
-}
-
-.point-row{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:flex-start;
-
-    gap:15px;
+    padding:15px 0;
 
 }
 
 .point-title{
 
-    width:120px;
-
-    font-size:18px;
+    font-size:20px;
 
     font-weight:bold;
 
     color:#333;
 
-    line-height:1.5;
-
 }
 
 .point-value{
 
-    min-width:80px;
+    margin-top:10px;
 
-    text-align:center;
+    font-size:36px;
 
-    color:var(--green);
-
-    font-size:34px;
+    color:#009966;
 
     font-weight:bold;
-
-}
-
-.point-value span{
-
-    font-size:42px;
 
 }
 
 .point-desc{
 
-    flex:1;
+    margin-top:8px;
 
-    font-size:16px;
+    font-size:18px;
 
-    font-weight:bold;
+}
 
-    line-height:1.5;
+.point-date{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+    line-height:1.6;
 
 }
 
 .blue{
 
-    color:var(--blue);
+    color:#1976D2;
+
+    font-weight:bold;
 
 }
 
 .red{
 
-    color:var(--red);
+    color:#E53935;
+
+    font-weight:bold;
 
 }
 
-hr{
-
-    border:none;
-
-    border-top:1px solid var(--border);
-
-    margin:18px 0;
-
-}
-
-/* ==========================================
-   成功訊息
-   ========================================== */
+/* =======================
+   Success
+======================= */
 
 .success-text{
 
-    margin-top:28px;
-
     text-align:center;
 
-    color:var(--red);
+    margin-top:25px;
 
-    font-size:26px;
+    color:#E53935;
+
+    font-size:24px;
 
     font-weight:bold;
 
@@ -327,23 +313,17 @@ hr{
 
 .success-text span{
 
-    color:var(--green);
+    color:#009966;
 
-    font-size:52px;
+    font-size:56px;
 
 }
 
-/* ==========================================
-   手機版
-   ========================================== */
+/* =======================
+   Mobile
+======================= */
 
 @media (max-width:768px){
-
-    .container{
-
-        padding:20px;
-
-    }
 
     .result-card{
 
@@ -359,13 +339,13 @@ hr{
 
     .total-title{
 
-        font-size:18px;
+        font-size:16px;
 
     }
 
-    .big-point{
+    .total-number{
 
-        font-size:42px;
+        font-size:40px;
 
     }
 
@@ -375,53 +355,45 @@ hr{
 
     }
 
-    .tip{
-
-        font-size:15px;
-
-    }
-
-    .point-row{
-
-        gap:8px;
-
-    }
-
     .point-title{
-
-        width:80px;
-
-        font-size:16px;
-
-    }
-
-    .point-value{
-
-        font-size:22px;
-
-    }
-
-    .point-value span{
-
-        font-size:34px;
-
-    }
-
-    .point-desc{
-
-        font-size:14px;
-
-    }
-
-    .success-text{
 
         font-size:18px;
 
     }
 
+    .point-value{
+
+        font-size:30px;
+
+    }
+
+    .point-desc{
+
+        font-size:16px;
+
+    }
+
+    .point-date{
+
+        font-size:16px;
+
+    }
+
+    .tip{
+
+        font-size:16px;
+
+    }
+
+    .success-text{
+
+        font-size:20px;
+
+    }
+
     .success-text span{
 
-        font-size:40px;
+        font-size:42px;
 
     }
 
