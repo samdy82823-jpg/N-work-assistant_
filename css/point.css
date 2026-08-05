@@ -164,9 +164,29 @@ h1{
     line-height:1.5;
 }
 
-.result-row strong{
+.point-value{
+
     color:#009966;
-    font-size:30px;
+
+    font-size:36px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    margin-bottom:8px;
+
+}
+
+.point-value strong{
+
+    color:inherit;
+
+    font-size:inherit;
+
+    font-weight:inherit;
+
+}
 }
 
 .blue{
@@ -299,13 +319,21 @@ h1{
 
 .point-value{
 
-    font-size:36px;
-
-    font-weight:bold;
-
     color:#009966;
 
-    margin-bottom:10px;
+    font-size:36px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+.point-value strong{
+
+    color:inherit;
+
+    font-weight:inherit;
 
 }
 
