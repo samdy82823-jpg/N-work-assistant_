@@ -1,3 +1,4 @@
+
 const messageTotal = document.getElementById("messageTotal");
 
 const discountPoint = document.getElementById("discountPoint");
@@ -11,6 +12,8 @@ const clear = document.getElementById("clear");
 
 console.log("point.js 已載入");
 
+console.log(eventDate);
+
 const money = document.getElementById("money");
 
 const totalPoint = document.getElementById("totalPoint");
@@ -18,6 +21,8 @@ const totalPoint = document.getElementById("totalPoint");
 const normalPoint = document.getElementById("normalPoint");
 
 const eventPoint = document.getElementById("eventPoint");
+
+console.log("eventDate =", eventDate);
 
 const calculate = document.getElementById("calculate");
 
@@ -60,6 +65,9 @@ clear.onclick = function(){
     discountMoney.innerText = 0;
 
     normalDate.innerHTML = "下次消費即可折抵";
+
+    console.log(eventStart);
+    console.log(eventEnd);
     eventDate.innerHTML = eventStart + " ～ " + eventEnd;
 
     money.focus();
