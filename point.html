@@ -7,9 +7,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>點數換算工具</title>
+    <title>點數計算器</title>
 
     <link rel="stylesheet" href="css/point.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,14 +19,14 @@
 
 <div class="container">
 
-    <h1>💰 點數換算工具</h1>
+    <h1>🎁 會員點數計算器</h1>
 
-    <label>請輸入消費金額（元）</label>
+    <label>請輸入消費金額</label>
 
     <input
-        type="number"
         id="money"
-        placeholder="例如：15687">
+        type="number"
+        placeholder="例如：5600">
 
     <div class="button-group">
 
@@ -38,72 +40,134 @@
 
     </div>
 
+    <div id="result" class="result-card">
+
+        <h2>🎉 計算結果</h2>
+
+        <!-- 總點數 -->
+
+        <div class="total-card">
+
+            <div class="total-title">
+
+                總點數：
+
+                <span class="big-point">
+
+                    <span id="totalPoint">0</span>
+
+                </span>
+
+                <span class="point-unit">
+                    點
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="tip">
+
+            💡 1 點可以折抵 1 元
+
+        </div>
+
+        <hr>
+
+        <!-- 一般點數 -->
+
+        <div class="point-item">
+
+            <div class="point-row">
+
+                <div class="point-title">
+
+                    一般點數<br>(2%)
+
+                </div>
+
+                <div class="point-value">
+
+                    <span id="normalPoint">0</span>
+
+                    點
+
+                </div>
+
+                <div class="point-desc blue">
+
+                    下次消費<br>即可折抵
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- 限期點數 -->
+
+        <div class="point-item">
+
+            <div class="point-row">
+
+                <div class="point-title">
+
+                    限期點數<br>(8%)
+
+                </div>
+
+                <div class="point-value">
+
+                    <span id="eventPoint">0</span>
+
+                    點
+
+                </div>
+
+                <div class="point-desc red">
+
+                    使用期限2026/8/10-2026/8/30<br>
+
+                    <span id="eventDate"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- 成功訊息 -->
+
+        <div class="success-text">
+
+            🎉 恭喜您！
+
+            本次消費獲得
+
+            <br><br>
+
+            <span id="messageTotal">
+
+                0
+
+            </span>
+
+            點會員點數！
+
+        </div>
+
+    </div>
+
 </div>
-<div id="result" class="result-card">
 
-<h2>🎉 計算結果</h2>
+<script src="js/setting.js"></script>
 
-<div class="point-item">
+<script src="js/point.js"></script>
 
-    <div class="point-title">
-        一般點數（2%）
-    </div>
-
-    <div class="point-value">
-        <span id="normalPoint">0</span> 點
-    </div>
-
-    <div class="point-desc blue">
-        下次消費即可折抵
-    </div>
-
-</div>
-
-<hr>
-
-<div class="point-item">
-
-    <div class="point-title">
-        限期點數（8%）
-    </div>
-
-    <div class="point-value">
-        <span id="eventPoint">0</span> 點
-    </div>
-
-    <div class="point-desc red">
-        使用期限2026/8/10-2026/8/30 
-    </div>
-
-    <div class="point-date red">
-        <span id="eventDate"></span>
-    </div>
-
-</div>
-
-</div>
-
-    <hr>
-
-    <div class="success-text">
-
-        🎉 恭喜您！
-
-        本次消費獲得
-
-        <span id="messageTotal">0</span>
-
-        點會員點數！
-
-    </div>
-
-</div>
-
-</div>
-
-</div>
 </body>
 
 </html>
-<script src="js/setting.js"></script>
-<script src="js/point.js"></script>
